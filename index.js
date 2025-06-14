@@ -20,14 +20,12 @@ const TARGET_SELECTOR = 'div.section[data-home-block="slider"]';
         const target = parent?.querySelector(TARGET_SELECTOR);
         if (target) {
             target.remove();
-            alert('true!');
             return true;
         }
         return false;
     }
 
     if (!removeTarget()) {
-        alert('set observer');
         const observer = new MutationObserver(() => {
             if (removeTarget()) observer.disconnect();
         });
