@@ -5,6 +5,7 @@
 // @description      Deletes the slider with the advertisement on the main page of the website.
 // @description:ru   Удаляет слайдер с рекламой на главной странице сайта.
 // @match            https://mangalib.me/
+// @match            https://mangalib.me/ru?section=home-updates
 // @run-at           document-idle
 // @grant            none
 // ==/UserScript==
